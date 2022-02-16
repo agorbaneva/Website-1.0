@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Facts</title>
+	
+	<link rel="stylesheet" href="../css/index.css">
+
+</head>
+<body>
+    
+	<div class="topnav" id="myTopnav">
+		<a href="../">Home</a>
+		<a href="../labs">Labs</a>
+		<a href="./profile">Profile</a>
+		<a href="javascript:location.reload (false)" class = "active">Number Facts</a>
+		<div class="unhyperlinkedNav">Alyssa Gorbaneva's Website</div>      
+
+    </div>
+    
+	<h1>Come read some facts about the number {{the_number}}</h1>
+
+    <ul class="list">
+        {{#each facts}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+</body>
+</html>
+

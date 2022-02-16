@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ION Profile</title>
+	
+	<link rel="stylesheet" href="./css/index.css">
+	
+</head>
+<body>
+    
+	<div class="topnav" id="myTopnav">
+      <a href="./">Home</a>
+      <a href="./labs">Labs</a>
+      <a href="./profile" class="active">Profile</a>
+      <div class="unhyperlinkedNav">Alyssa Gorbaneva's Website</div>      
+
+    </div>
+	<p>
+	Hello {{user}}, you have successfully logged in. You have visited this page {{visits}} times.
+	</p>
+	
+	<form action="./logout">
+        <input type="submit" value="LOGOUT" />
+    </form>
+</body>
+</html>

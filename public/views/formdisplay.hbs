@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Weather Form</title>
+
+	<link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="./">Home</a>
+		<a href="./labs">Labs</a>
+		<a href="./profile">Profile</a>
+		<a href="javascript:location.reload (false)" class = "active">Weather Form</a>
+		<div class="unhyperlinkedNav">Alyssa Gorbaneva's Website</div>
+	</div>
+
+
+	<h2> Weather Form </h2>
+
+    <p>If you want to find latitude and longitude coordinates, go to <a href="https://www.gps-coordinates.net/" target="_blank">GPS Coordinates</a>. Put latitude then longitude coordinates of the place's forecast that you want in the form below.</p>
+
+
+	<form action="/2022agorbane/getweather">
+		<input type="number" step="any" name="lat" value="38.8"><br>
+		<input type="number" step="any" name="long" value="-79.8"><br>
+		<button type="submit">PRESS THIS</button>
+	</form>
+
+	<p>Clicking the "Submit" button will send the form-data to a page that will tell you the weather at these coordinates.</p>
+
+</body>
+
+</html>
+

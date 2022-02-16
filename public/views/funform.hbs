@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>>Form Fill-In</title>
+
+	<link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="./">Home</a>
+		<a href="./labs">Labs</a>
+        <a href="./profile">Profile</a>
+		<a href="javascript:location.reload (false)" class = "active">Form Result</a>
+		<div class="unhyperlinkedNav">Alyssa Gorbaneva's Website</div>
+	</div>
+
+	<h2> Fill in the form with different words. </h2>
+
+	<form method="get" action="./formresults">
+
+		<p> What is your name? </p>
+		<input type="text" name="name"><br>
+
+
+		<p> If you had one day left on Earth, what would you do? </p>
+		<input type="text" name="story"><br>
+
+		<p> Which pronoun would you use for youself? </p>
+		<input type="radio" id="her" name="pronoun" value="her">
+		<label for="her">Her</label><br>
+		<input type="radio" id="his" name="pronoun" value="his">
+		<label for="his">His</label><br>
+		<input type="radio" id="their" name="pronoun" value="their">
+		<label for="their">Their</label>
+
+		<p> What is your favorite color? </p>
+		<input type="text" name="color"><br><br>
+
+		<button type="submit">PRESS THIS</button>
+	</form>
+
+
+
+</body>
+
+</html>
+

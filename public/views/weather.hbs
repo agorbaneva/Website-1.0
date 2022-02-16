@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Site</title>
+	
+	<link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="./">Home</a>
+		<a href="./labs">Labs</a>
+		<a href="./profile">Profile</a>
+		<a href="javascript:location.reload (false)" class = "active">Weather</a>
+		<div class="unhyperlinkedNav">Alyssa Gorbaneva's Website</div>      
+
+    </div>
+
+    <h1>Weather Reporter from {{city}}, {{state}}</h1>
+
+    <p>If you want to find latitude and longitude coordinates, go to <a href="https://www.gps-coordinates.net/" target="_blank">GPS Coordinates</a>. Go to four decimal places in the URL or click <a href="./weatherform"> here</a> for an easy-to-use form.</p>
+    <div>
+    <ul class="list">
+	    {{#each days}}
+	    <h2>{{this.name}} - {{this.shortForecast}}</h2>
+	    <p>The temperature will be {{this.temperature}} {{this.temperatureUnit}}. </p>
+	    {{/each}}
+    </ul>
+    </div>
+
+
+
+</body>
+
+</html>
